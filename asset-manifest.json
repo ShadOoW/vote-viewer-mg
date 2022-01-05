@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vote-viewer-mg/static/css/main.ab1ff3f9.css",
+    "main.js": "/vote-viewer-mg/static/js/main.69526f21.js",
+    "static/js/787.7db92089.chunk.js": "/vote-viewer-mg/static/js/787.7db92089.chunk.js",
+    "index.html": "/vote-viewer-mg/index.html",
+    "main.ab1ff3f9.css.map": "/vote-viewer-mg/static/css/main.ab1ff3f9.css.map",
+    "main.69526f21.js.map": "/vote-viewer-mg/static/js/main.69526f21.js.map",
+    "787.7db92089.chunk.js.map": "/vote-viewer-mg/static/js/787.7db92089.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab1ff3f9.css",
+    "static/js/main.69526f21.js"
+  ]
+}
