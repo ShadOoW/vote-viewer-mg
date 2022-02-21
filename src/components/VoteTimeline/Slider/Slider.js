@@ -1,8 +1,7 @@
 import './Slider.css';
 import Slider from '@mui/material/Slider';
-import { votes } from '../../../data';
 
-export const VotesSlider = ({handleChange}) => {
+export const VotesSlider = ({handleChange, count}) => {
   function valuetext(value) {
     return `${value}-vote`;
   }
@@ -17,7 +16,7 @@ export const VotesSlider = ({handleChange}) => {
         step={1}
         marks
         min={0}
-        max={votes.length}
+        max={count}
         onChange={handleChange}
       />
     </div>

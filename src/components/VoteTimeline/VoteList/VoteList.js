@@ -1,14 +1,15 @@
 import './VoteList.css';
 import {Chip, Stack} from "@mui/material";
-import { players } from '../../../data/players';
 
-export const VoteList = ({player, currentPostId}) => {
+export const VoteList = ({player, currentVote}) => {
+  if (!currentVote) {
+    return <></>
+  }
+
   return (
     <Stack direction="row" spacing={1} alignItems="center">
-      {player.votes.map((vote) => (
-        vote.postId <= currentPostId ? (
-          <Chip label={players.find(player => player.id === vote.source).display} color="info" size="small" />
-        ) : null
+      {[...currentVote.players[player.id]].reverse().map((vote) => (
+        <Chip label={vote} color="info" size="small" />
       ))}
     </Stack>
   );
